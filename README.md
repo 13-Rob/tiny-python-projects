@@ -6,4 +6,11 @@ The command to test files is
     $ pytest <test fiel>
 
 You can use the "-v" option to create a verbose output.
-    $ pytests -v test.py
+    $ pytests -v <test file>
+
+You can add the "-x" flag to make the tests stop on the first failing test.
+    $ pytest -x <test file>
+
+You can mix the flags.
+    $ pytest -vx <test file>
+
