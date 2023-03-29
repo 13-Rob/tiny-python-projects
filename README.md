@@ -1,46 +1,34 @@
 ## Book Progress
-##-------------------<br>
-<hr></hr>
+<p align=center>〜〜🏄🏽🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊</p>
+<hr>
 
 ## Notes
 <p>To run a python program from the cmd you use<br></p>
-<p>`$ python3 file-name`</p>
-
-<p>To test a python script you need a test file which is going to run the actual tests.</p>
-<p>The command to test files is</p>
-<p>`$ pytest test file`</p>
-
-<p>You can use the "-v" option to create a verbose output.</p>
-<p>`$ pytests -v test file`</p>
-
-<p>You can add the "-x" flag to make the tests stop on the first failing test.</p>
-<p>`$ pytest -x test file`</p>
-
+<p><code>$ python3 <b>file-name</b></code></p>
+<p>To test a python script with the test. The command to test a program based on a file is:</p>
+<p><code>$ pytest <b>test-file</b></code></p>
+<p>You can use the <b>-v</b> option to create a verbose output.</p>
+<p><code>$ pytests -v <b>test-file</b></code></p>
+<p>You can add the <b>-x</b> flag to make the tests stop on the first failing test.</p>
+<p><code>$ pytest -x <b>test-file</b></code></p>
 <p>You can mix the flags.</p>
-<p>`$ pytest -vx test file`</p>
+<p><code>$ pytest -vx <b>test-file</b></code></p>
+<hr></hr>
 
 <p>To indicate which laguage needs to be used to execute the commands in the file. You add a special comment line that starts off with #! (called shebang).</p>
-<p>This is the comment I might need.</p>
-<p>`#!/usr/bin/env python3`</p>
-
+<p><code>#!/usr/bin/env python3</code></p>
 <p>To make a program executable you use</p>
-<p>`$ chmod +x program file`</p>
-
+<p><code>$ chmod +x <b>file-name</b></code></p>
 <p>After that you can run the program like so:</p>
-<p>`$ ./program file`</p>
+<p><code>$ ./<b>file-name</b></code></p>
 <p>The ./ is the current directory and is necessary.</p>
-
 <p>The $PATH variable is a way of telling your computer to only look in places where executable programs can be found.</p>
-
 <p>To run a program and send paramterers you can do it like so:</p>
-<p>`$ ./program file parameters`</p>
-
+<p><code>$ ./<b>file-name</b> <b>parameters</b></code></p>
 <p>Most programs include arguments like "-h" and "--help", which provide help on how to use the program.</p>
-<p>`$ ./program file -h parameters`</p>
+<p><code>$ ./<b>file-name</b> -h <b>parameters</b></code></p>
+<p>To add parameters we can use the argparse module. A docstring is a string that occurs just after the def of a function.</p>
+<hr></hr>
 
-<p>To add parameters we can use the argparse module.</p>
-
-<p>A docstring is a string that occurs just after the def of a function.</p>
-
-<p>One line conditions in python</p>
-<p>`variable = value if true if condition else value if false`</p>
+<p>This is a one line condition example in python</p>
+<p><code>variable = value if true if condition else value if false</code></p>
