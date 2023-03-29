@@ -21,6 +21,11 @@ def get_args():
     parser.add_argument('word',
                         metavar='word',
                         help='Any word')
+    parser.add_argument('-s',
+                        '--side',
+                        help='To indicate if the object is on the starboard of the boat',
+                        action='store_true')
+
     return parser.parse_args()
 
 
@@ -32,6 +37,7 @@ def main():
     """
     args = get_args()
     word = args.word
+    flag = args.side
 
     article = 'An' if word[0].lower() in 'aeiou' else 'A'
     # If the positional argument is a vocal then the set article to 'an',
@@ -39,7 +45,9 @@ def main():
 
     article = article.lower() if word[0].islower() else article
 
-    print(f'Ahoy, Captain, {article} {args.word} off the larboard bow!')
+    side = 'starboard' if flag else 'larboard'
+
+    print(f'Ahoy, Captain, {article} {args.word} off the {side} bow!')
 
 
 # --------------------------------------------------
