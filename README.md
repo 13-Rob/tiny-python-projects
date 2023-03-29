@@ -1,3 +1,5 @@
+#Progress
+(##-------------------)
 #Notes
 To run a python program from the cmd you use
     $ python3 <program file>
@@ -37,3 +39,6 @@ Most programs include arguments like "-h" and "--help", which provide help on ho
 To add parameters we can use the argparse module.
 
 A docstring is a string that occurs just after the def of a funcction.
+
+One line conditions in python
+    <variable> = <value if true> if <condition> else <vale if false>
