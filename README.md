@@ -1,6 +1,7 @@
 ## Book Progress
 <p align=center>〜〜🏄🏽🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊</p>
-<hr>
+
+##
 
 ## Notes
 <p>To run a python program from the cmd you use<br></p>
@@ -13,7 +14,8 @@
 <p><code>$ pytest -x <b>test-file</b></code></p>
 <p>You can mix the flags.</p>
 <p><code>$ pytest -vx <b>test-file</b></code></p>
-<hr></hr>
+
+##
 
 <p>To indicate which laguage needs to be used to execute the commands in the file. You add a special comment line that starts off with #! (called shebang).</p>
 <p><code>#!/usr/bin/env python3</code></p>
@@ -28,7 +30,8 @@
 <p>Most programs include arguments like "-h" and "--help", which provide help on how to use the program.</p>
 <p><code>$ ./<b>file-name</b> -h <b>parameters</b></code></p>
 <p>To add parameters we can use the argparse module. A docstring is a string that occurs just after the def of a function.</p>
-<hr></hr>
+
+##
 
 <p>This is a one line condition example in python</p>
 <p><code>variable = <b>value_if_true</b> if condition else <b>value_if_false</b></code></p>
