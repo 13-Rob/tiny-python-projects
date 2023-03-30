@@ -24,6 +24,16 @@ def get_args():
                         '--sorted',
                         help='To indicate if you want the list sorted',
                         action='store_true')
+    parser.add_argument('-nc',
+                        '--nocomma',
+                        help="Indicate if you don't want to use the oxford comma",
+                        action='store_true')
+    parser.add_argument('-c',
+                        '--character',
+                        help='The separator character',
+                        metavar='str',
+                        type=str,
+                        default=',')
 
     return parser.parse_args()
 
@@ -34,6 +44,8 @@ def main():
 
     args = get_args()
     pos_arg = args.list
+    comma_arg = args.nocomma
+    sep_arg = args.character
     items = ''
 
     if args.sorted:
@@ -44,7 +56,10 @@ def main():
     elif len(pos_arg) == 2:
         items = ' and '.join(pos_arg)
     else:
-        items = ', and '.join([', '.join(pos_arg[:-1]), pos_arg[-1]])
+        if comma_arg:
+            items = ' and '.join([f'{sep_arg} '.join(pos_arg[:-1]), pos_arg[-1]])
+        else:
+            items = f'{sep_arg} and '.join([f'{sep_arg} '.join(pos_arg[:-1]), pos_arg[-1]])
 
     print(f'You are bringing {items}.')
 
