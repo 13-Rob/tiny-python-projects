@@ -4,7 +4,7 @@
 ##
 
 ## Notes
-<p>To run a python program from the cmd you use<br></p>
+<p>To run a python program from the cmd you use</p>
 <p><code>$ python3 <b>file-name</b></code></p>
 <p>To test a python script with the test. The command to test a program based on a file is:</p>
 <p><code>$ pytest <b>test-file</b></code></p>
@@ -43,11 +43,13 @@
 <p><code>mylist = [foo, bar]</code></p>
 <p>List Methods</p>
 <ul>
-<p>* Adding elements to a list:</p>
-<code>mylist.append('test')</code><br>
-<code>$ [foo, bar, 'test']</code>
+<p>Adding elements to a list:</p>
+<p><code>mylist.append('test')</code><br>
+<code>$ [foo, bar, 'test']</code></p>
+<p><code>mylist.extend(['test', baz])</code><br>
+<code>$ [foo, bar, 'test', baz]</code></p>
 </ul>
 
 ### Dictionaries
 <p>Dictionary:</p>
-<p><code>{key: value, foo: bar}</code></p>
+<p><code>mydictionary = {key: value, foo: bar}</code></p>
