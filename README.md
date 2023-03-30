@@ -36,6 +36,9 @@
 <p>This is a one line condition example in python</p>
 <p><code>variable = <b>value_if_true</b> if condition else <b>value_if_false</b></code></p>
 
+## Help
+<p><code>help(<b>variable</b>)</code></p>
+
 ##
 
 ### Lists
