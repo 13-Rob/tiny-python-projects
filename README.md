@@ -1,5 +1,5 @@
 ## Book Progress
-<p align=center>〜〜🏄🏽🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊</p>
+<p align=center>〜〜〜🏄🏽🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊</p>
 
 ##
 
@@ -35,3 +35,19 @@
 
 <p>This is a one line condition example in python</p>
 <p><code>variable = <b>value_if_true</b> if condition else <b>value_if_false</b></code></p>
+
+##
+
+### Lists
+<p>Lists are mutable.</p>
+<p><code>mylist = [foo, bar]</code></p>
+<p>List Methods</p>
+<ul>
+<p>* Adding elements to a list:</p>
+<code>mylist.append('test')</code><br>
+<code>$ [foo, bar, 'test']</code>
+</ul>
+
+### Dictionaries
+<p>Dictionary:</p>
+<p><code>{key: value, foo: bar}</code></p>
